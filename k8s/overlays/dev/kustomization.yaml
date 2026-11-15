@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: saludo-dev
+resources:
+  - ../../base
+replicas:
+  - name: saludo-service
+    count: 1
+images:
+  - name: saludo-service
+    newName: ghcr.io/fgaticadev/lab-kub-sboot
+    newTag: dev
