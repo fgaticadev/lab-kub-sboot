@@ -9,4 +9,4 @@ replicas:
 images:
   - name: saludo-service
     newName: ghcr.io/fgaticadev/lab-kub-sboot
-    newTag: dev
+    newTag: sha-32363155e1a162897f8ff8d1bb44bffaa21b0be5
